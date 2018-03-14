@@ -10,6 +10,7 @@
   "dependencies": {
     "ieee1888": "^0.0.10"
   },
+  "repository": "EmOne/ieee1888-node-red",  
   "node-red": {
     "nodes": {
       "ieee1888-node-red": "ieee1888-node-red.js"
