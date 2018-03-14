@@ -1,28 +1,46 @@
 {
   "name": "ieee1888",
-  "version": "0.0.7",
+  "version": "0.0.10",
   "description": "A node module for IEEE1888 protocol",
+  "license": "MIT",
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=6.0.0"
   },
-  "author": {
-    "name": "Shih Jia-Cheng",
-    "email": "dsxsxsxs@gmail.com"
-  },
-  "dependencies": {
-    "soap": "=0.8.0",
-    "node-uuid": ">=1.4.2",
-    "moment": ">=2.9.0"
-  },
-  "repository": {
-      "type": "git",
-      "url": "git://github.com/dsxsxsxs/node-ieee1888"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://raw.github.com/dsxsxsxs/node-ieee1888/master/license.md"
-    }
+  "author": "Shih Jia-Cheng(dsxs) <dsxsxsxs@gmail.com>",
+  "contributors": [
+    "Makoto Uju(ainehanta) <ainehanta@hotmail.co.jp>"
   ],
-  "main": "./index.js"
+  "dependencies": {
+    "extend": "^3.0.1",
+    "handsoap": "^0.2.0",
+    "moment": "^2.19.3",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "eslint": "^4.12.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.5.3",
+    "uglify-es": "latest"
+  },
+  "files": [
+    "lib",
+    "license.md",
+    "readme.md",
+    "browserify.js",
+    "index.js"
+  ],
+  "repository": "dsxsxsxs/node-ieee1888",
+  "licenses": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ",
+    "browserify": "node browserify.js",
+    "uglify": "uglifyjs --compress --mangle -- ieee1888.js > ieee1888.min.js",
+    "lint": "eslint lib"
+  }
 }

@@ -3,4 +3,6 @@ node_modules
 npm-debug.log
 easysoap.js
 .npmignore
-test.js
+ieee1888*.js
+out
+test*
