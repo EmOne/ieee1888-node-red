@@ -1,46 +1,18 @@
 {
-  "name": "ieee1888",
-  "version": "0.0.10",
-  "description": "A node module for IEEE1888 protocol",
+  "name": "node-red-contrib-ieee1888",
+  "version": "0.0.1",
+  "description": "A node-red module for IEEE1888 protocol",
   "license": "MIT",
   "engines": {
     "node": ">=6.0.0"
   },
-  "author": "Shih Jia-Cheng(dsxs) <dsxsxsxs@gmail.com>",
-  "contributors": [
-    "Makoto Uju(ainehanta) <ainehanta@hotmail.co.jp>"
-  ],
+  "author": "Anol Paisal <info@emone.co.th>",
   "dependencies": {
-    "extend": "^3.0.1",
-    "handsoap": "^0.2.0",
-    "moment": "^2.19.3",
-    "uuid": "^3.1.0"
+    "ieee1888": "^0.0.10"
   },
-  "devDependencies": {
-    "browserify": "^14.5.0",
-    "eslint": "^4.12.1",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "mocha": "^3.5.3",
-    "uglify-es": "latest"
-  },
-  "files": [
-    "lib",
-    "license.md",
-    "readme.md",
-    "browserify.js",
-    "index.js"
-  ],
-  "repository": "dsxsxsxs/node-ieee1888",
-  "licenses": "MIT",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha ",
-    "browserify": "node browserify.js",
-    "uglify": "uglifyjs --compress --mangle -- ieee1888.js > ieee1888.min.js",
-    "lint": "eslint lib"
+  "node-red": {
+    "nodes": {
+      "ieee1888-node-red": "ieee1888-node-red.js"
+    }
   }
 }

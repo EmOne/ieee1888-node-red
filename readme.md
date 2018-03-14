@@ -1,12 +1,12 @@
-node module for ieee1888 write and fetch.
+node module for ieee1888 node-red write and fetch.
 
-API has been updated since v0.0.9 with full promise support. Check out Sample code below for more detail.
+API has been updated since v0.0.1 with full promise support. Check out Sample code below for more detail.
 You may also provide a callback function instead. But writing code with Promise/Async await style is strongly recommended.
 
 # Installation
 
 ```
-npm install ieee1888
+npm install ieee1888-node-red
 ```
 
 For browser, cd to this module and try
@@ -20,6 +20,10 @@ npm run uglify
 to bundle it as a stand alone module.
 
 # Sample code
+
+# Testing your node in Node-RED
+
+https://nodered.org/docs/creating-nodes/first-node#testing-your-node-in-node-red
 
 ```javascript
 
